@@ -1,0 +1,517 @@
+.index {
+    &-banner {
+        padding-top: 40px;
+        background-color: #F0F0F0;
+        &-img {
+            img {
+                width: 756px;
+                height: 500px;
+            }
+        }
+        &-recommend {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #000000;
+            color: #FFFFFF;
+            h3 {
+                font-size: 48px;
+                line-height: 50px;
+                writing-mode: vertical-rl;
+                padding: 0 24px;
+                padding-top: 24px;
+            }
+            h4 {
+                font-size: 20px;
+                line-height: 26px;
+                writing-mode: vertical-rl;
+            }
+        }
+        &-text {
+            background-color: #FFFFFF;
+            padding: 0 24px;
+            @include pad {
+                padding-bottom: 48px;
+            }
+            h2 {
+                font-size: 48px;
+                line-height: 70px;
+            }
+            h4 {
+                padding-top: 80px;
+                font-size: 18px;
+                line-height: 19px;
+                @include pad {
+                    padding-top: 48px;
+                }
+            }
+            a {
+                color: #000000;
+                font-size: 18px;
+                line-height: 19px;
+                position: absolute;
+                bottom: 24px;
+                right: 24px;
+                display: flex;
+                justify-content: center;
+                display: inline-block;
+                padding: 8px 48px;
+                border: 1px solid #000000;
+            }
+        }
+    }
+    &-product {
+        background-color: #F0F0F0;
+        padding-bottom: 80px;
+        &-box {
+            display: flex;
+            column-gap: 0px;
+        }
+        &-card {
+            background-color: #FFFFFF;
+            position: relative;
+            //width: 320px;
+            height: 340px;
+            padding: 24px;
+            h4 {
+                font-size: 18px;
+                line-height: 19px;
+            }
+            h3 {
+                font-size: 32px;
+                line-height: 46px;
+            }
+            a {
+                color: #000000;
+                font-size: 18px;
+                line-height: 19px;
+                position: absolute;
+                bottom: 24px;
+                right: 24px;
+                display: flex;
+                justify-content: center;
+                display: inline-block;
+                padding: 8px 48px;
+                border: 1px solid #000000;
+            }
+        }
+        &-img {
+            //width: 329px;
+            img {
+                width: 100%;
+                height: 340px;
+            }
+        }
+    }
+    &-ranking {
+        background-color: #F0F0F0;
+        padding-bottom: 80px;
+        &-img {
+            width: 414px;
+            height: 374px;
+            background-image: url(../images/art04.jpg);
+            background-size: cover;
+        }
+        &-img1 {
+            width: 414px;
+            height: 374px;
+            background-image: url(../images/art05.jpg);
+            background-size: cover;
+        }
+        &-img2 {
+            width: 414px;
+            height: 374px;
+            background-image: url(../images/art06.jpg);
+            background-size: cover;
+        }
+        &-list {
+            display: flex;
+            column-gap: 24px;
+            @include pad {
+                justify-content: center;
+            }
+        }
+        &-item {
+            border: 1px solid #000000;
+            width: 416px;
+            margin-bottom: 24px;
+            &-hover {
+                position: relative;
+                background-color: #000;
+                &:hover {
+                    .ranking-button {
+                        display: block;
+                        z-index: 1;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #000;
+                        opacity: .5;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            img {
+                width: 414px;
+                height: 374px;
+            }
+        }
+        &-card {
+            background-color: #FFFFFF;
+            h3 {
+                padding: 16px;
+                border-top: 1px solid #000000;
+                border-bottom: 1px solid #000000;
+                font-size: 18px;
+                line-height: 26px;
+            }
+            h4 {
+                padding: 8px 16px;
+                line-height: 17px;
+            }
+        }
+        &-bottom {
+            display: flex;
+            justify-content: center;
+            &-hover {
+                cursor: pointer;
+                position: relative;
+                background-color: #000;
+                &:hover {
+                    .ranking-bottom-triangle {
+                        display: block;
+                        z-index: 1;
+                    }
+                    &::after {
+                        font-size: 18px;
+                        line-height: 18px;
+                        content: "more";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #000;
+                        opacity: 0.7;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            &-list {
+                column-gap: 24px;
+                @include pad {
+                    justify-content: center;
+                }
+            }
+            &-card {
+                background-color: #FFFFFF;
+                border: 1px solid #000000;
+                h3 {
+                    padding: 16px;
+                    border-bottom: 1px solid #000000;
+                }
+                h4 {
+                    line-height: 17px;
+                    padding: 8px 16px;
+                }
+            }
+            &-item {
+                width: 416px;
+                span {
+                    background-color: #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    font-size: 24px;
+                    line-height: 24px;
+                    padding: 0px 16px;
+                    border: 1px solid #000000;
+                }
+                h3 {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            &-img {
+                border: 1px solid #000000;
+                border-left: transparent;
+                border-right: transparent;
+                img {
+                    width: 87px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+    &-artist {
+        background-color: #F0F0F0;
+    }
+    &-join {
+        background-color: #F0F0F0;
+        border-bottom: 1px solid #000000;
+        &-title {
+            padding-top: 80px;
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 4px solid #000000;
+            h3 {
+                font-size: 48px;
+                line-height: 50px;
+            }
+            h4 {
+                font-size: 20px;
+                line-height: 29px;
+            }
+        }
+        &-list {
+            border-top: 1px solid #000000;
+            display: flex;
+            justify-content: center;
+            column-gap: 24px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        &-item {
+            width: 306px;
+            padding: 80px 0;
+            text-align: center;
+            i {
+                font-size: 40px;
+                color: #E6553B;
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+    &-art {
+        background-color: #F0F0F0;
+    }
+}
+
+
+.subtitle {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 16px;
+    h3 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 29px;
+    }
+}
+.subtitle-button {
+
+    color: #000000;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 8px 48px;
+    border: none;
+    &:hover {
+        background-color: #E6553B;
+        color: #FFFFFF;
+        .subtitle-triangle {
+            border-color: transparent transparent #000000 transparent;
+        }
+    }
+}
+// Artist 熱門藝術家
+.bg-slider{
+    position: relative;
+    overflow:hidden;
+}
+
+// Swiper
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow:visible;
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 306px;
+    margin-bottom: 72px;
+    img{
+        display: block;
+        width: 100%;
+        height: 262px;
+        object-fit: cover;
+        filter: grayscale(100%);
+    }
+    &-active{
+        z-index:2;
+        min-width: 636px;
+        img{
+            width: 100%;
+            height: 439px;
+            filter: none;
+        }
+    }
+}
+.swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    border-radius: 0;
+    &-active{
+        width: 16px;
+        background-color: #E6553B;
+        border-radius: 0;
+    }
+}
+.swiper-slide-active{
+    .swiper-title{
+        display: block;
+    }
+    .swiper-body{
+        display: block;
+    }
+    .swiper-button{
+        display: block;
+    }
+}
+.swiper-button {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    display: none;
+}
+.swiper-title {
+    text-align: left;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 80px;
+    line-height: 85px;
+    display: none;
+}
+.swiper-body {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    width: 307px;
+    padding: 24px;
+    opacity: .85;
+    background-color: #FFFFFF;
+    display: none;
+}
+.swiper-more {
+    position: relative;
+}
+
+.triangle {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    display: none;
+    /*  三角形  */
+    width: 0;
+    height: 0;
+    border-right: 16px solid #e6553b;
+    border-top: 16px solid transparent;
+}
+
+.img-hover {
+    position: relative;
+    background-color: #000;
+        &:hover {
+        &::before {
+            content: "唯一想擁有的人，唯一不可以擁有的\00000a\00000a▼ 300";
+            white-space: pre-line;
+            position: absolute;
+            height: 100%;
+            background-color: black;
+            opacity: 0.7;
+            color: #fff;
+            padding: 32px;
+            outline: 1px solid #fff;
+            outline-offset: -16px;
+        }
+        &::after {
+            content: "more";
+            position: absolute;
+            right: 32px;
+            bottom: 32px;
+            background: #fff;
+            padding: 8px 48px;
+            color: black;
+            font-weight: bold;
+        }
+        .triangle {
+            display: block;
+            z-index: 1;
+        }
+    }
+}
+.ranking {
+    &-triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 16px 16px;
+        border-color: transparent transparent #000000 transparent;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &-button {
+        display: inline-block;
+        border: 1px solid #000000;
+        background-color: #E6553B;
+        color: #FFFFFF;
+        padding: 8px 48px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }
+    &-bottom {
+        &-triangle {
+            display: none;
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 0 0 16px 16px;
+            border-color: transparent transparent #E6553B transparent;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.subtitle-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 16px 16px;
+    border-color: transparent transparent #E6553B transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

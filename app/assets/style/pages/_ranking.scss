@@ -1,0 +1,50 @@
+.ranking {
+    &-content {
+        background-color: #F0F0F0;
+        padding-bottom: 80px;
+        border-bottom: 1px solid #000000;
+        &-index {
+            width: 56px;
+            border-right: 1px solid #000000;
+            padding: 24px 0;
+            text-align: center;
+            p {
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+        &-title {
+            text-align: center;
+            padding-top: 40px;
+            h3 {
+                font-size: 48px;
+                line-height: 70px;
+            }
+        }
+        &-table {
+            &-item {
+                border: 1px solid green;
+            }
+            &-body {
+                border: 1px solid #000000;
+                background-color: #FFFFFF;
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+        &-item {
+            &-img {
+                padding: 16px;
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+                a {
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

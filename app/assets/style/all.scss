@@ -1,0 +1,15 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "helpers/variable";
+@import "../../../node_modules//bootstrap/scss/bootstrap";
+
+@import "config/reset";
+@import "helpers/mixin";
+
+@import "variable";
+@import "config/base";
+@import "layout/layout";
+
+@import "./pages/index";
+@import "./pages/introduce";
+@import "./pages/ranking";
+@import "./pages/explore";
