@@ -10109,10 +10109,20 @@ a {
   bottom: 0;
   right: 0; }
 
+.introduce-layout {
+  margin-top: 40px;
+  margin-bottom: 80px; }
+  @media (max-width: 992px) {
+    .introduce-layout {
+      width: 738px; } }
+
 .introduce-artist {
   padding-top: 40px;
   padding-bottom: 81px;
   background-color: #F0F0F0; }
+  @media (max-width: 992px) {
+    .introduce-artist {
+      padding-bottom: 40px; } }
   .introduce-artist-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10120,12 +10130,20 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (max-width: 992px) {
+      .introduce-artist-box {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .introduce-artist-card {
     width: 966px;
     outline: 1px solid #000000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 992px) {
+      .introduce-artist-card {
+        width: 738px; } }
   .introduce-artist-img img {
     width: 416px;
     height: 264px; }
@@ -10142,6 +10160,9 @@ a {
     background-color: #FFFFFF;
     width: 306px;
     border: 1px solid #000000; }
+    @media (max-width: 992px) {
+      .introduce-artist-table {
+        margin-top: 48px; } }
     .introduce-artist-table-item {
       padding: 21px 24px;
       border-bottom: 1px solid #000000; }
@@ -10153,6 +10174,9 @@ a {
   font-size: 48px;
   line-height: 50px;
   color: #808080; }
+  @media (max-width: 992px) {
+    .introduce-tab button {
+      font-size: 42px; } }
   .introduce-tab button:hover {
     color: #000000; }
 
@@ -10173,6 +10197,10 @@ a {
     margin-bottom: 88px;
     background-color: #FFFFFF;
     padding-left: 110px; }
+    @media (max-width: 992px) {
+      .introduce-artworks-card {
+        padding-left: 0;
+        padding: 0 15px; } }
     .introduce-artworks-card h3, .introduce-artworks-card .h3 {
       font-size: 24px;
       line-height: 35px; }
@@ -10190,6 +10218,9 @@ a {
       border: 10px solid #000000;
       width: 263px;
       height: 270px; }
+      @media (max-width: 992px) {
+        .introduce-artworks-item img {
+          height: 180px; } }
 
 .introduce-triangle-one {
   width: 0;
