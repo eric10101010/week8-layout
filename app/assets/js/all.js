@@ -1,3 +1,27 @@
+var gridMasonry = document.querySelector(".grid-masonry");
+
+function masonry() {
+	var msnry = new Masonry(gridMasonry, {
+		itemSelector: ".grid-masonry-item"
+	});
+	imagesLoaded(gridMasonry).on("progress", function () {
+		msnry.layout();
+	});
+	}
+
+	if (gridMasonry) {
+	window.addEventListener("load", function () {
+		masonry();
+	});
+	} // 解決瀑布流 tab 切換取不到高度
+
+
+var dataTabs = document.querySelectorAll("button[data-bs-toggle=tab]");
+dataTabs.forEach(function (dataTab) {
+	dataTab.addEventListener("shown.bs.tab", function () {
+    masonry();
+	});
+}); 
 
 // Swiper
 var swiper = new Swiper(".swiper", {
@@ -31,8 +55,9 @@ var swiper = new Swiper(".swiper", {
 });
 
 // 確保圖片都載入後，以免造成剛進入頁面時圖片會被覆蓋
-$('.row').imagesLoaded().progress( function() {
-// 渲染整體畫面
-});
-$('.row').masonry(); 
+// $('.row').imagesLoaded().progress( function() {
+// // 渲染整體畫面
+// });
+// $('.row').masonry(); 
+
 

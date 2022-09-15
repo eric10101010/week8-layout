@@ -1,16 +1,32 @@
 .introduce {
+    &-layout {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        @include pad {
+            width: 738px;
+        }
+    }
     &-artist {
         padding-top: 40px;
         padding-bottom: 81px;
         background-color: #F0F0F0;
+        @include pad {
+            padding-bottom: 40px;
+        }
         &-box {
             display: flex;
             justify-content: space-between;
+            @include pad {
+                justify-content: center;
+            }
         }
         &-card {
             width: 966px;
             outline: 1px solid #000000;
             display: flex;
+            @include pad {
+                width: 738px;
+            }
         }
         &-img {
             img {
@@ -34,6 +50,9 @@
             background-color: #FFFFFF;
             width: 306px;
             border: 1px solid #000000;
+            @include pad {
+                margin-top: 48px;
+            }
             &-item {
                 padding: 21px 24px;
                 border-bottom: 1px solid #000000;
@@ -48,6 +67,9 @@
             font-size: 48px;
             line-height: 50px;
             color: #808080;
+            @include pad {
+                font-size: 42px;
+            }
             &:hover {
                 color: #000000;
             }
@@ -71,6 +93,10 @@
             margin-bottom: 88px;
             background-color: #FFFFFF;
             padding-left: 110px;
+            @include pad {
+                padding-left: 0;
+                padding: 0 15px;
+            }
             h3 {
                 font-size: 24px;
                 line-height: 35px;
@@ -87,6 +113,9 @@
                 border: 10px solid #000000;
                 width: 263px;
                 height: 270px;
+                @include pad {
+                    height: 180px;
+                }
             }
         }
     }
