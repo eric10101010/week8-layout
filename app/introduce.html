@@ -58,24 +58,24 @@ current: introduce
 </section>
 <section class="introduce-artworks">
     <div class="container px-0">
-        <ul class="nav nav-tabs border-bottom border-dark" id="myTab" role="tablist">
+        <ul class="nav nav-tabs border-bottom border-dark introduce-tab" id="myTab" role="tablist">
             <li class="nav-item introduce-tab" role="presentation">
                 <button class="nav-link active d-flex align-items-end" id="artWorks-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="true">
                     Art Works
-                    <h4 class="ps-3">系列作品</h4>
+                    <h4 class="ps-3 d-lg-block d-md-block d-none">系列作品</h4>
                 </button>
             </li>
             <li class="nav-item introduce-tab d-flex align-items-end" role="presentation">
                 <button class="nav-link d-flex align-items-end" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="profile" aria-selected="false">
                     Collection
-                    <h4 class="ps-3">收藏品</h4>
+                    <h4 class="ps-3 d-lg-block d-md-block d-none">收藏品</h4>
                 </button>
             </li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
                 <div class="row g-0">
-                    <div class="introduce-artworks-card col-12 position-relative">
+                    <div class="introduce-artworks-card col-12 position-relative d-lg-block d-md-block d-none">
                         <span class="introduce-triangle-one"></span>
                         <span class="introduce-triangle-two"></span>
                         <div class="d-flex">
@@ -104,7 +104,7 @@ current: introduce
                             </li>
                         </ul>
                     </div>
-                    <div class="introduce-artworks-card col-12 mt-0 mb-208 position-relative">
+                    <div class="introduce-artworks-card col-12 mt-0 mb-208 position-relative d-lg-block d-md-block d-none">
                         <span class="introduce-triangle-one"></span>
                         <span class="introduce-triangle-two"></span>
                         <div class="d-flex">
@@ -120,18 +120,48 @@ current: introduce
                         </div>
                         <ul class="introduce-artworks-list">
                             <li class="introduce-artworks-item">
-                                <img src="./assets/images/art27.jpg" alt="">
+                                <img src="./assets/images/art27.jpg" alt="photo">
                             </li>
                             <li class="introduce-artworks-item">
-                                <img src="./assets/images/art20.jpg" alt="">
+                                <img src="./assets/images/art20.jpg" alt="photo">
                             </li>
                             <li class="introduce-artworks-item">
-                                <img src="./assets/images/art26.jpg" alt="">
+                                <img src="./assets/images/art26.jpg" alt="photo">
                             </li>
                             <li class="introduce-artworks-item">
-                                <img src="./assets/images/art22.jpg" alt="">
+                                <img src="./assets/images/art22.jpg" alt="photo">
                             </li>
                         </ul>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="introduce-artworks-card-mobile d-lg-none d-md-none d-block position-relative">
+                            <span class="introduce-triangle-one position-absolute top-0"></span>
+                            <span class="introduce-triangle-two position-absolute top-0"></span>
+                            <h3 class="fw-bold pb-3">追求者送我的花</h3>
+                            <p class="pb-4">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+                            <img src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="photo" class="mb-3">
+                            <div class="d-flex justify-content-center">
+                                <div class="more-btn-mobile">
+                                    <a href="#" class="position-relative">MORE
+                                        <span class="button-triangle"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="introduce-artworks-card-mobile d-lg-none d-md-none d-block mt-3 mb-40 position-relative">
+                            <span class="introduce-triangle-one position-absolute top-0"></span>
+                            <span class="introduce-triangle-two position-absolute top-0"></span>
+                            <h3 class="fw-bold pb-3">我家窗前的鳥</h3>
+                            <p class="pb-4">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                            <img src="./assets/images/art27.jpg" alt="photo" class="mb-3">
+                            <div class="d-flex justify-content-center">
+                                <div class="more-btn-mobile">
+                                    <a href="#" class="position-relative">MORE
+                                        <span class="button-triangle"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

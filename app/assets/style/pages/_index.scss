@@ -2,10 +2,17 @@
     &-banner {
         padding-top: 40px;
         background-color: #F0F0F0;
+        @include pad {
+            padding-top: 0;
+        }
         &-img {
             img {
                 width: 756px;
                 height: 500px;
+                @include mobile {
+                    width: 100%;
+                    height: 238px;
+                }
             }
         }
         &-recommend {
@@ -31,18 +38,26 @@
             background-color: #FFFFFF;
             padding: 0 24px;
             @include pad {
-                padding-bottom: 48px;
+                padding-bottom: 96px;
+            }
+            @include mobile {
+                padding: 0 12px;
+                height: 257px;
             }
             h2 {
                 font-size: 48px;
                 line-height: 70px;
+                @include pad {
+                    font-size: 24px;
+                    line-height: 35px;
+                }
             }
             h4 {
                 padding-top: 80px;
                 font-size: 18px;
                 line-height: 19px;
                 @include pad {
-                    padding-top: 48px;
+                    padding-top: 32px;
                 }
             }
             a {
@@ -57,55 +72,75 @@
                 display: inline-block;
                 padding: 8px 48px;
                 border: 1px solid #000000;
+                @include mobile {
+                    right: 12px;
+                    bottom: 0;
+                    margin-bottom: 32px;
+                }
             }
         }
     }
     &-product {
         background-color: #F0F0F0;
         padding-bottom: 80px;
-        &-box {
-            display: flex;
-            column-gap: 0px;
+        @include mobile {
+            padding-bottom: 40px;
+        }
+        &-list {
+            @include mobile {
+                display: flex;
+                flex-direction: column-reverse;
+            }
         }
         &-card {
-            background-color: #FFFFFF;
             position: relative;
-            //width: 320px;
-            height: 340px;
+            background-color: #FFFFFF;
             padding: 24px;
-            h4 {
-                font-size: 18px;
-                line-height: 19px;
+            @include mobile {
+                padding: 0 12px;
+                padding-top: 32px;
+                padding-bottom: 83px;
             }
             h3 {
                 font-size: 32px;
                 line-height: 46px;
             }
-            a {
-                color: #000000;
+            h4 {
                 font-size: 18px;
                 line-height: 19px;
+            }
+            a {
                 position: absolute;
                 bottom: 24px;
                 right: 24px;
-                display: flex;
-                justify-content: center;
-                display: inline-block;
                 padding: 8px 48px;
                 border: 1px solid #000000;
+                color: #000000;
+                font-size: 18px;
+                line-height: 19px;
+                display: inline-block;
             }
         }
         &-img {
-            //width: 329px;
             img {
-                width: 100%;
+                width: 329px;
                 height: 340px;
+                @include pad {
+                    width: 100%;
+                }
+                @include mobile {
+                    border-top: 2px solid #000000;
+                    height: 372px;
+                }
             }
         }
     }
     &-ranking {
         background-color: #F0F0F0;
         padding-bottom: 80px;
+        @include mobile {
+            padding-bottom: 40px;
+        }
         &-img {
             width: 414px;
             height: 374px;
@@ -180,6 +215,16 @@
         &-bottom {
             display: flex;
             justify-content: center;
+            &-space {
+                width: 64px;
+                height: 64px;
+                h3{
+                    text-align: center;
+                    font-size: 32px;
+                    background-color: #FFFFFF;
+                    color: #000000;
+                }
+            }
             &-hover {
                 cursor: pointer;
                 position: relative;
@@ -211,6 +256,9 @@
                 column-gap: 24px;
                 @include pad {
                     justify-content: center;
+                }
+                @include mobile {
+                    padding: 0 12px;
                 }
             }
             &-card {
@@ -254,6 +302,9 @@
     }
     &-artist {
         background-color: #F0F0F0;
+        @include mobile {
+            padding-bottom: 40px;
+        }
     }
     &-join {
         background-color: #F0F0F0;
@@ -263,9 +314,18 @@
             text-align: center;
             padding-bottom: 40px;
             border-bottom: 4px solid #000000;
+            @include mobile {
+                padding-top: 48px;
+                padding-bottom: 32px;
+            }
             h3 {
                 font-size: 48px;
                 line-height: 50px;
+                @include mobile {
+                    font-size: 32px;
+                    line-height: 34px;
+                    padding-bottom: 16px;
+                }
             }
             h4 {
                 font-size: 20px;
@@ -284,6 +344,10 @@
             width: 306px;
             padding: 80px 0;
             text-align: center;
+            @include mobile {
+                padding: 48px 0;
+                padding-bottom: 0;
+            }
             i {
                 font-size: 40px;
                 color: #E6553B;
@@ -296,18 +360,130 @@
     }
     &-art {
         background-color: #F0F0F0;
+        &-item-1, &-item-3, &-item-5, &-item-8 {
+            img {
+                height: 254px;
+                @include pad {
+                    width: 100%;
+                }
+            }
+        }
+        &-item-1 {
+            @include mobile {
+                height: 191px;
+            }
+            img {
+                @include mobile {
+                    height: 139px;
+                }
+            }
+        }
+        &-item-2 {
+            @include mobile {
+                height: 203px;
+            }
+            img {
+                height: 295px;
+                @include pad {
+                    width: 100%;
+                }
+                @include mobile {
+                    height: 151px;
+                }
+            }
+        }
+        &-item-3 {
+            @include mobile {
+                height: 145px;
+            }
+            img {
+                @include mobile {
+                    height: 93px;
+                }
+            }
+        }
+        &-item-4 {
+            @include mobile {
+                height: 225px;
+            }
+            img {
+                height: 169px;
+                @include pad {
+                    width: 100%;
+                }
+                @include mobile {
+                    height: 173px;
+                }
+            }
+        }
+        &-item-5 {
+            @include mobile {
+                display: none;
+            }
+        }
+        &-item-6 {
+            @include mobile {
+                height: 244px;
+            }
+            img {
+                height: 174px;
+                @include pad {
+                    width: 100%;
+                }
+                @include mobile {
+                    height: 192px;
+                }
+            }
+        }
+        &-item-7 {
+            @include mobile {
+                display: none;
+            }
+            img {
+                height: 395px;
+                @include pad {
+                    width: 100%;
+                }
+            };
+        }
+        &-item-8 {
+            @include mobile {
+                height: 151px;
+            }
+            img {
+                @include mobile {
+                    height: 99px;
+                }
+            }
+        }
+
     }
 }
-
-
+.grid-masonry-item {
+    @include mobile {
+        h2 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
 .subtitle {
     display: flex;
     align-items: flex-end;
     border-bottom: 1px solid #000000;
     padding-bottom: 16px;
+    margin-bottom: 48px;
+    @include mobile {
+        padding-bottom: 8px;
+        margin-bottom: 24px;
+    }
     h3 {
         font-size: 48px;
         line-height: 50px;
+        @include mobile {
+            font-size: 32px;
+            line-height: 34px;
+        }
     }
     h4 {
         font-size: 20px;
@@ -315,7 +491,6 @@
     }
 }
 .subtitle-button {
-
     color: #000000;
     font-size: 18px;
     line-height: 19px;
@@ -333,6 +508,7 @@
 .bg-slider{
     position: relative;
     overflow:hidden;
+    min-height: 399px;
 }
 
 // Swiper
@@ -362,18 +538,28 @@
         height: 262px;
         object-fit: cover;
         filter: grayscale(100%);
+        @include mobile {
+            height: 168px;
+        }
     }
     &-active{
         z-index:2;
         min-width: 636px;
+        @include mobile {
+            min-width: 336px;
+        }
         img{
             width: 100%;
             height: 439px;
+            @include mobile {
+                height: 232px;
+            }
             filter: none;
         }
     }
 }
 .swiper-pagination-bullet{
+    z-index: 10;
     width: 8px;
     height: 8px;
     opacity: 1;
@@ -400,6 +586,10 @@
     bottom: 24px;
     right: 24px;
     display: none;
+    @include mobile {
+        bottom: 8px;
+        right: 8px;
+    }
 }
 .swiper-title {
     text-align: left;
@@ -409,6 +599,10 @@
     font-size: 80px;
     line-height: 85px;
     display: none;
+    @include mobile {
+        font-size: 32px;
+        line-height: 34px;
+    }
 }
 .swiper-body {
     position: absolute;
@@ -419,6 +613,11 @@
     opacity: .85;
     background-color: #FFFFFF;
     display: none;
+    @include mobile {
+        width: 100%;
+        left: 0;
+        bottom: -118px;
+    }
 }
 .swiper-more {
     position: relative;

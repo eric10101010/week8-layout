@@ -1,27 +1,37 @@
 var gridMasonry = document.querySelector(".grid-masonry");
 
 function masonry() {
-	var msnry = new Masonry(gridMasonry, {
-		itemSelector: ".grid-masonry-item"
-	});
-	imagesLoaded(gridMasonry).on("progress", function () {
-		msnry.layout();
-	});
-	}
+var msnry = new Masonry(gridMasonry, {
+	itemSelector: ".grid-masonry-item"
+});
 
-	if (gridMasonry) {
-	window.addEventListener("load", function () {
-		masonry();
+imagesLoaded(gridMasonry).on("progress", function () {
+	msnry.layout();
 	});
-	} // 解決瀑布流 tab 切換取不到高度
+}
+
+if (gridMasonry) {
+	window.addEventListener("load", function () {
+	masonry();
+	});
+} // 解決瀑布流 tab 切換取不到高度
 
 
 var dataTabs = document.querySelectorAll("button[data-bs-toggle=tab]");
-dataTabs.forEach(function (dataTab) {
+	dataTabs.forEach(function (dataTab) {
 	dataTab.addEventListener("shown.bs.tab", function () {
-    masonry();
+	masonry();
 	});
-}); 
+}); // 解決 according 開合取不到高度
+
+var accordionButtons = document.querySelectorAll(".grid-masonry .accordion");
+	accordionButtons.forEach(function (e) {
+	["hidden.bs.collapse", "shown.bs.collapse"].forEach(function (item) {
+	e.addEventListener(item, function () {
+		masonry();
+	});
+	});
+}); // 手機版市值
 
 // Swiper
 var swiper = new Swiper(".swiper", {

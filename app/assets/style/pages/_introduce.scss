@@ -13,11 +13,17 @@
         @include pad {
             padding-bottom: 40px;
         }
+        @include mobile {
+            padding-top: 24px;
+        }
         &-box {
             display: flex;
             justify-content: space-between;
             @include pad {
                 justify-content: center;
+            }
+            @include mobile {
+                padding: 0 12px;
             }
         }
         &-card {
@@ -26,6 +32,10 @@
             display: flex;
             @include pad {
                 width: 738px;
+            }
+            @include mobile {
+                display: flex;
+                flex-direction: column;
             }
         }
         &-img {
@@ -38,9 +48,16 @@
             background-color: #FFFFFF;
             width: 550px;
             padding: 24px;
+            @include mobile {
+                width: 100%;
+            }
             h3 {
                 font-size: 48px;
                 line-height: 50px;
+                @include mobile {
+                    font-size: 32px;
+                    line-height: 34px;
+                }
             }
             h4 {
                 line-height: 17px;
@@ -53,13 +70,30 @@
             @include pad {
                 margin-top: 48px;
             }
+            @include mobile {
+                margin-top: 16px;
+            }
+            @include mobile {
+                width: 1005px;
+            }
             &-item {
                 padding: 21px 24px;
                 border-bottom: 1px solid #000000;
+                span {
+                    @include mobile {
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+                }
             }
         }
     }
     &-tab {
+        &-box {
+            @include mobile {
+                padding: 0 12px;
+            }
+        }
         button {
             padding: 0 48px;
             padding-top: 17px;
@@ -69,6 +103,11 @@
             color: #808080;
             @include pad {
                 font-size: 42px;
+            }
+            @include mobile {
+                padding: 16px;
+                font-size: 30px;
+                line-height: 34px;
             }
             &:hover {
                 color: #000000;
@@ -95,11 +134,30 @@
             padding-left: 110px;
             @include pad {
                 padding-left: 0;
-                padding: 0 15px;
+                padding: 0 12px;
+            }
+            @include mobile {
+                width: 100%;
             }
             h3 {
                 font-size: 24px;
                 line-height: 35px;
+            }
+            &-mobile {
+                margin-top: 24px;
+                width: 336px;
+                border: 1px solid #000000;
+                background-color: #FFFFFF;
+                padding: 32px 16px;
+                h3 {
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+                img {
+                    width: 304px;
+                    height: 313px;
+                    border: 10px solid #000000;
+                }
             }
         }
         &-list {
@@ -174,4 +232,16 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.more-btn-mobile {
+    a {
+        padding: 8px 48px;
+        border: 1px solid #000000;
+        color: #000000;
+        background-color: #FFFFFF;
+    }
+}
+.mb-40 {
+    margin-bottom: 40px;
 }

@@ -20,17 +20,59 @@
   </head>
 
   <body>
+  
+  <div class="header">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="header-logo">
+          <h1>
+            <a href="index.html">
+              <img src="./assets/images/logo.svg" alt="logo">
+            </a>
+          </h1>
+        </div>
+        <ul class="header-menu d-flex">
+          <li class="header-search d-flex align-items-center">
+            <form>
+              <div class="d-flex">
+                <input type="text" class="form-control w-230px bg-transparent border-0 shadow-none" id="search-btn"
+                placeholder="搜尋作品名稱、藝術家名稱" aria-label="搜尋作品名稱、藝術家名稱" aria-describedby="search-btn">
+              <label class="d-flex" for="search-btn">
+                <button class="btn border-0" type="submit" id="search-btn">
+                  <i class="fas fa-search fs-3"></i>
+                </button>
+              </label>
+              </div>
 
+            </form>
+          </li>
+          <li class="header-menu-item">
+            <a href="explore.html">
+              探索
+            </a>
+          </li>
+          <li class="header-menu-item">
+            <a href="ranking.html">
+              市值
+            </a>
+          </li>
+          <li class="header-menu-wallet">
+            <a href="#">
+              <i class="fas fa-wallet fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <main>
     <%- contents %>
   </main>
-
-
-    <footer class="footer border-top py-2">
-      <div class="border-4 border-top border-dark">
-        <p class="text-center py-4 mb-0">© ART NFT. All Rights Reserved</p>
-      </div>
-    </footer>
+  <footer class="footer border-top py-2">
+    <div class="border-4 border-top border-dark">
+      <p class="text-center py-4 mb-0">© ART NFT. All Rights Reserved</p>
+    </div>
+  </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

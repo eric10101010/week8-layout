@@ -1,3 +1,287 @@
+.explore {
+    background-color: #F0F0F0;
+    padding-top: 40px;
+    padding-bottom: 170px;
+    @include mobile {
+        padding-bottom: 48px;
+    }
+    &-item-1{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 358px;
+        @include mobile {
+            height: 191px;
+        }
+        img {
+            height: 258px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 139px;
+            }
+        }
+    }
+    &-item-2{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 375px;
+        @include mobile {
+            height: 203px;
+        }
+        img {
+            height: 327px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 151px;
+            }
+        }
+    }
+    &-item-3{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 302px;
+        @include mobile {
+            height: 145px;
+        }
+        img {
+            height: 254px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 93px;
+            }
+        }
+    }
+    &-item-4{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 273px;
+        @include mobile {
+            height: 225px;
+        }
+        img {
+            height: 169px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 173px;
+            }
+        }
+    }
+    &-item-5{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 358px;
+        @include mobile {
+            height: 237px;
+        }
+        img {
+            height: 254px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 185px;
+            }
+        }
+    }
+    &-item-6{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 499px;
+        @include mobile {
+            height: 191px;
+        }
+        img {
+            height: 395px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 139px;
+            }
+        }
+    }
+    &-item-7{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 278px;
+        @include mobile {
+            height: 244px;
+        }
+        img {
+            height: 174px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 192px;
+            }
+        }
+    }
+    &-item-8{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 358px;
+        @include mobile {
+            height: 151px;
+        }
+        img {
+            height: 254px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 99px;
+            }
+        }
+    }
+    &-item-9{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 444px;
+        @include mobile {
+            height: 224px;
+        }
+        img {
+            height: 340px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 160px;
+            }
+        }
+    }
+    &-item-10{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 382px;
+        @include mobile {
+            height: 237px;
+        }
+        img {
+            height: 334px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 173px;
+            }
+        }
+    }
+    &-item-11{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 358px;
+        @include mobile {
+            height: 149px;
+        }
+        img {
+            height: 254px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 97px;
+            }
+        }
+    }
+    &-item-12{
+        h2 {
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+            @include mobile {
+                font-weight: normal;
+                border-bottom: none;
+            }
+        }
+        height: 374px;
+        @include mobile {
+            height: 226px;
+        }
+        img {
+            height: 326px;
+            @include pad {
+                width: 100%;
+            }
+            @include mobile {
+                height: 174px;
+            }
+        }
+    }
+}
 .artwork__overlay {
     position: absolute;
     width: calc(100% - (8px * 2));
