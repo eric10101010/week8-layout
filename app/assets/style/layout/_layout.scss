@@ -73,9 +73,15 @@
         &-menu {
             li {
                 border-bottom: 1px solid #000000;
+                &:hover {
+                    background-color: #E6553B;
+                }
             }
             a {
                 color: #000000;
+                &:hover {
+                    color: #FFFFFF;
+                }
             }
         }
     }

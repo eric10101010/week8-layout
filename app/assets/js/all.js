@@ -33,6 +33,15 @@ var accordionButtons = document.querySelectorAll(".grid-masonry .accordion");
 	});
 }); // 手機版市值
 
+// mobile搜尋框展開
+$(".navbar-search").click(function () {
+	$(".search-bar-open").toggleClass("d-none");
+});
+$(".search-bar-back").click(function () {
+	$(".search-bar-open").toggleClass("d-none");
+});
+
+
 // Swiper
 var swiper = new Swiper(".swiper", {
 	slidesPerView: 1,
