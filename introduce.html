@@ -21,50 +21,120 @@
 
   <body>
   
-  <div class="header">
-    <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <div class="header-logo">
-          <h1>
-            <a href="index.html">
-              <img src="./assets/images/logo.svg" alt="logo">
-            </a>
-          </h1>
+  <section class="header">
+    <div class="container-fluid border-bottom border-dark">
+      <nav>
+        <div class="header-box container d-lg-flex d-md-none d-none">
+          <!-- LOGO -->
+          <div class="header-logo">
+            <h1>
+              <a class="header-brand align-middle flex-grow-1" href="index.html">
+                LOGO
+              </a>
+            </h1>
+          </div>
+          <div class="header-bar d-lg-flex d-md-flex d-none">
+            <!-- search -->
+            <div class="header-search d-flex align-items-center">
+              <input class="header-search-bar" type="text" name="search" id="search" placeholder="搜尋作品名稱、藝術家名稱"/>
+              <button class="header-search-btn border-0">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <!-- menu -->
+            <ul class="header-menu d-flex">
+              <li class="header-menu-item">
+                <a href="explore.html" class="fw-bold">
+                  探索
+                </a>
+              </li>
+              <li class="header-menu-item">
+                <a href="ranking.html" class="fw-bold">
+                  市值
+                </a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="wallet fw-bold ">
+                  <i class="fa-solid fa-wallet fs-3"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="header-menu d-flex">
-          <li class="header-search d-flex align-items-center">
-            <form>
-              <div class="d-flex">
-                <input type="text" class="form-control w-230px bg-transparent border-0 shadow-none" id="search-btn"
-                placeholder="搜尋作品名稱、藝術家名稱" aria-label="搜尋作品名稱、藝術家名稱" aria-describedby="search-btn">
-              <label class="d-flex" for="search-btn">
-                <button class="btn border-0" type="submit" id="search-btn">
-                  <i class="fas fa-search fs-3"></i>
+        <!-- mobile搜尋框 -->
+        <div class="header-mobile-box d-flex justify-content-between align-items-end d-lg-none">
+          <div class="header-logo">
+            <h1>
+              <a class="header-brand align-middle flex-grow-1" href="index.html">
+                LOGO
+              </a>
+            </h1>
+          </div>
+          <div class="d-flex">
+            <a href="#" class="navbar-search">
+              <i class="fa-solid fa-magnifying-glass text-black align-middle" style="font-size: 18px;"></i>
+            </a>
+            <!-- monile漢堡選單 -->
+            <button
+              class="header-mobile-ham"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+            <i class="fa-solid fa-bars text-black" style="font-size: 21px;"></i>
+            </button>
+          </div>
+        </div>
+        <!-- monile搜尋框展開 -->
+        <div class="search-bar-open pt-2 fixed-top d-none">
+          <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+              <button
+                type="button"
+                class="search-bar-back btn btn-link text-black shadow-none"
+              >
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-0 shadow-none"
+                  placeholder="搜尋作品名稱、藝術家名稱"
+                  aria-describedby="search-arts"
+                />
+                <button
+                  class="btn bg-transparent border-0 shadow-none"
+                  type="button"
+                  id="search-arts"
+                >
+                  <i class="fas fa-search"></i>
                 </button>
-              </label>
               </div>
-
-            </form>
-          </li>
-          <li class="header-menu-item">
-            <a href="explore.html">
-              探索
-            </a>
-          </li>
-          <li class="header-menu-item">
-            <a href="ranking.html">
-              市值
-            </a>
-          </li>
-          <li class="header-menu-wallet">
-            <a href="#">
-              <i class="fas fa-wallet fs-3"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white mb-0 d-lg-none">
+          <div class="header-mobile-menu collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-0">
+              <li class="nav-item py-4 text-center">
+                <a class="fw-bold nav-link" aria-current="page" href="explore.html">
+                  探索
+                </a>
+              </li>
+              <li class="nav-item py-4 text-center">
+                <a class="fw-bold nav-link" aria-current="page" href="ranking.html">
+                  市值
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
     </div>
-  </div>
+  </section>
   <main>
     <section class="introduce-artist">
     <div class="container px-0">

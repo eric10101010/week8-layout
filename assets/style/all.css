@@ -9600,31 +9600,72 @@ a {
   max-width: 1298px; }
 
 .header {
-  background-color: #F0F0F0;
-  border-bottom: 1px solid #000000; }
+  background-color: #F0F0F0; }
+  .header-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .header-logo {
-    padding: 32px 0; }
-    .header-logo img {
-      width: 190px;
-      height: 40px; }
-  .header-search {
-    border: 1px solid #000000;
-    border-top: none;
-    border-bottom: none; }
-    .header-search form {
-      padding: 0 48px; }
-    .header-search input {
-      width: 288px; }
+    background-image: url(../images/logo.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 40px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+    @media (max-width: 992px) {
+      .header-logo {
+        width: 85px;
+        height: 18px; } }
   .header-menu-item {
-    border-right: 1px solid #000000; }
-    .header-menu-item a {
-      color: #000000;
-      padding: 40px 48px; }
-  .header-menu-wallet a {
-    color: #000000;
+    border-left: 1px solid #000000;
     padding: 40px 48px; }
+    .header-menu-item a {
+      color: #000000; }
+  .header-search {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 432px;
+    padding: 0 48px;
+    border-left: 1px solid #000000; }
+    .header-search i {
+      font-size: 24px; }
+    .header-search-bar {
+      width: 288px;
+      background-color: #F0F0F0;
+      border: none; }
+      .header-search-bar:focus {
+        border-color: #000000; }
+  .header-mobile-box {
+    padding: 16px 0; }
+  .header-mobile-ham {
+    padding: 0;
+    padding-left: 24px;
+    padding-top: 2px;
+    border: none; }
+  .header-mobile-search-open {
+    display: block; }
+    .header-mobile-search-open:active {
+      display: block; }
+  .header-mobile-menu li {
+    border-bottom: 1px solid #000000; }
+  .header-mobile-menu a {
+    color: #000000; }
 
 .footer {
+  background-color: #F0F0F0; }
+
+.search-bar-open {
   background-color: #F0F0F0; }
 
 .index-banner {
@@ -9636,6 +9677,9 @@ a {
   .index-banner-img img {
     width: 756px;
     height: 500px; }
+    @media (max-width: 992px) {
+      .index-banner-img img {
+        width: 100%; } }
     @media (max-width: 767px) {
       .index-banner-img img {
         width: 100%;
