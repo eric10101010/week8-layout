@@ -33,7 +33,14 @@ accordionButtons.forEach(function (e) {
     });
   });
 }); // 手機版市值
-// Swiper
+// mobile搜尋框展開
+
+$(".navbar-search").click(function () {
+  $(".search-bar-open").toggleClass("d-none");
+});
+$(".search-bar-back").click(function () {
+  $(".search-bar-open").toggleClass("d-none");
+}); // Swiper
 
 var swiper = new Swiper(".swiper", {
   slidesPerView: 1,

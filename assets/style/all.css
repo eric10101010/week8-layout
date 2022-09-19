@@ -9659,8 +9659,12 @@ a {
       display: block; }
   .header-mobile-menu li {
     border-bottom: 1px solid #000000; }
+    .header-mobile-menu li:hover {
+      background-color: #E6553B; }
   .header-mobile-menu a {
     color: #000000; }
+    .header-mobile-menu a:hover {
+      color: #FFFFFF; }
 
 .footer {
   background-color: #F0F0F0; }
