@@ -9,6 +9,9 @@
             img {
                 width: 756px;
                 height: 500px;
+                @include pad {
+                    width: 100%;
+                }
                 @include mobile {
                     width: 100%;
                     height: 238px;

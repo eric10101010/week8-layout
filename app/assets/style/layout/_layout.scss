@@ -1,44 +1,89 @@
 .container {
     max-width: 1298px;
 }
+
 .header {
     background-color: #F0F0F0;
-    border-bottom: 1px solid #000000;
-    &-logo {
-        padding: 32px 0;
-        img {
-            width: 190px;
-            height: 40px;
-        }
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    &-search {
-        border: 1px solid #000000;
-        border-top: none;
-        border-bottom: none;
-        form {
-            padding: 0 48px;
-        }
-        input {
-            width: 288px;
+    &-logo {
+        background-image: url(../images/logo.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 40px;
+        display: block;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        @include pad {
+            width: 85px;
+            height: 18px;
         }
     }
     &-menu {
         &-item {
-            border-right: 1px solid #000000;
+            border-left: 1px solid #000000;
+            padding: 40px 48px;
             a {
                 color: #000000;
-                padding: 40px 48px;
-                
             }
         }
-        &-wallet {
+    }
+    &-search {
+        justify-content: space-between;
+        width: 432px;
+        padding: 0 48px;
+        border-left: 1px solid #000000;
+        i {
+            font-size: 24px;
+        }
+        &-bar {
+            width: 288px;
+            background-color: #F0F0F0;
+            border: none;
+            &:focus {
+                border-color: #000000;
+            }
+        }
+    }
+    &-mobile {
+        &-box {
+            padding: 16px 0;
+
+        }
+        &-ham {
+            padding: 0;
+            padding-left: 24px;
+            padding-top: 2px;
+            border: none;
+        }
+        &-search {
+            &-open{
+                display: block;
+                &:active {
+                    display: block;
+                }
+            }
+        }
+        &-menu {
+            li {
+                border-bottom: 1px solid #000000;
+            }
             a {
                 color: #000000;
-                padding: 40px 48px;
             }
         }
     }
 }
 .footer {
+    background-color: #F0F0F0;
+}
+
+.search-bar-open {
     background-color: #F0F0F0;
 }
