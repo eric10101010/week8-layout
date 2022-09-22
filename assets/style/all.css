@@ -9850,27 +9850,30 @@ a {
     .index-ranking {
       padding-bottom: 40px; } }
   .index-ranking-img {
-    width: 414px;
     height: 374px;
     background-image: url(../images/art04.jpg);
     background-size: cover; }
   .index-ranking-img1 {
-    width: 414px;
     height: 374px;
     background-image: url(../images/art05.jpg);
     background-size: cover; }
+    @media (max-width: 992px) {
+      .index-ranking-img1 {
+        background-position: 40%; } }
   .index-ranking-img2 {
-    width: 414px;
     height: 374px;
     background-image: url(../images/art06.jpg);
     background-size: cover; }
+    @media (max-width: 992px) {
+      .index-ranking-img2 {
+        background-position: 50%; } }
   .index-ranking-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 24px;
-       -moz-column-gap: 24px;
-            column-gap: 24px; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     @media (max-width: 992px) {
       .index-ranking-list {
         -webkit-box-pack: center;
@@ -9878,7 +9881,7 @@ a {
                 justify-content: center; } }
   .index-ranking-item {
     border: 1px solid #000000;
-    width: 416px;
+    width: 31%;
     margin-bottom: 24px; }
     .index-ranking-item-hover {
       position: relative;
@@ -9964,12 +9967,10 @@ a {
     .index-ranking-bottom-list {
       -webkit-column-gap: 24px;
          -moz-column-gap: 24px;
-              column-gap: 24px; }
-      @media (max-width: 992px) {
-        .index-ranking-bottom-list {
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center; } }
+              column-gap: 24px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       @media (max-width: 767px) {
         .index-ranking-bottom-list {
           padding: 0 12px; } }
@@ -9983,7 +9984,11 @@ a {
         line-height: 17px;
         padding: 8px 16px; }
     .index-ranking-bottom-item {
-      width: 416px; }
+      width: 31%; }
+      @media (max-width: 992px) {
+        .index-ranking-bottom-item {
+          padding: 0 12px;
+          width: 96%; } }
       .index-ranking-bottom-item span {
         background-color: #FFFFFF;
         display: -webkit-box;
