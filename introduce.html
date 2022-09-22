@@ -18,11 +18,10 @@
 
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
-
   <body>
-  
+
   <section class="header">
-    <div class="container-fluid border-bottom border-dark">
+    <div class="border-bottom border-dark">
       <nav>
         <div class="header-box container d-lg-flex d-md-none d-none">
           <!-- LOGO -->
@@ -93,7 +92,7 @@
             </button>
           </div>
         </div>
-        <!-- monile搜尋框展開 -->
+        <!-- mobile搜尋框展開 -->
         <div class="search-bar-open pt-2 fixed-top d-none">
           <div class="container">
             <div class="d-flex justify-content-center align-items-center">
@@ -134,7 +133,7 @@
                   市值
                 </a>
               </li>
-              <li class="nav-item py-4 text-center">
+              <li class="nav-item nav-item-active py-4 text-center">
                 <a class="fw-bold nav-link" aria-current="page" href="#">
                   連結錢包
                 </a>
@@ -157,11 +156,11 @@
                     <div class="d-flex justify-content-between">
                         <h3 class="pb-3">Michael</h3>
                         <div class="d-flex">
-                            <ul class="d-flex align-items-center">
-                                <li><a href="#"><i class="fab fa-discord text-dark"></i></a></li>
-                                <li class="ms-2"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
-                                <li class="ms-2"><a href="#"><i class="fas fa-globe text-dark"></i></a></li>
-                                <li class="ms-2"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
+                            <ul class="introduce-artist-icon d-flex align-items-center">
+                                <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                                <li class="ms-2"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="ms-2"><a href="#"><i class="fas fa-globe"></i></a></li>
+                                <li class="ms-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -171,25 +170,25 @@
             </div>
             <ul class="introduce-artist-table col-lg-3">
                 <li class="introduce-artist-table-item">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
                         <p class="fw-bold">販售中</p>
                         <span>168</span>
                     </div>
                 </li>
                 <li class="introduce-artist-table-item">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
                         <p class="fw-bold">地板價格</p>
                         <span>0.6 ETH</span>
                     </div>
                 </li>
                 <li class="introduce-artist-table-item">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
                         <p class="fw-bold">7 日成交</p>
                         <span>8.8 ETH</span>
                     </div>
                 </li>
                 <li class="introduce-artist-table-item border-0">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between align-items-center">
                         <p class="fw-bold">30 日成交</p>
                         <span>23.1 ETH</span>
                     </div>
@@ -200,14 +199,14 @@
 </section>
 <section class="introduce-artworks">
     <div class="container px-0">
-        <ul class="nav nav-tabs border-bottom border-dark introduce-tab" id="myTab" role="tablist">
+        <ul class="introduce-artworks-box nav nav-tabs border-bottom border-dark introduce-tab" id="myTab" role="tablist">
             <li class="nav-item introduce-tab" role="presentation">
                 <button class="nav-link active d-flex align-items-end" id="artWorks-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="true">
                     Art Works
                     <h4 class="ps-3 d-lg-block d-md-block d-none">系列作品</h4>
                 </button>
             </li>
-            <li class="nav-item introduce-tab d-flex align-items-end" role="presentation">
+            <li class="nav-item introduce-tab" role="presentation">
                 <button class="nav-link d-flex align-items-end" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="profile" aria-selected="false">
                     Collection
                     <h4 class="ps-3 d-lg-block d-md-block d-none">收藏品</h4>
