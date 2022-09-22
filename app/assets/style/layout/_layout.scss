@@ -5,6 +5,7 @@
 .header {
     background-color: #F0F0F0;
     &-box {
+        padding: 0 12px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,9 +29,9 @@
     &-menu {
         &-item {
             border-left: 1px solid #000000;
-            padding: 40px 48px;
             a {
                 color: #000000;
+                padding: 40px 48px;
             }
         }
     }
@@ -53,8 +54,7 @@
     }
     &-mobile {
         &-box {
-            padding: 16px 0;
-
+            padding: 16px 12px;
         }
         &-ham {
             padding: 0;
@@ -92,4 +92,11 @@
 
 .search-bar-open {
     background-color: #F0F0F0;
+}
+
+.nav-item-active {
+    background-color: #E6553B;
+    a {
+        color: #FFFFFF;
+    }
 }

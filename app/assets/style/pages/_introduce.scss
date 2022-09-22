@@ -16,6 +16,14 @@
         @include mobile {
             padding-top: 24px;
         }
+        &-icon {
+            a {
+                color: #000000;
+                &:hover {
+                    color: #E6553B;
+                }
+            }
+        }
         &-box {
             display: flex;
             justify-content: space-between;
@@ -68,6 +76,7 @@
             width: 306px;
             border: 1px solid #000000;
             @include pad {
+                width: 96%;
                 margin-top: 48px;
             }
             @include mobile {
@@ -80,10 +89,8 @@
                 padding: 21px 24px;
                 border-bottom: 1px solid #000000;
                 span {
-                    @include mobile {
-                        font-size: 32px;
-                        line-height: 32px;
-                    }
+                    font-size: 32px;
+                    line-height: 32px;
                 }
             }
         }
@@ -95,7 +102,7 @@
             }
         }
         button {
-            padding: 0 48px;
+            padding: 0 24px;
             padding-top: 17px;
             padding-bottom: 16px;
             font-size: 48px;
@@ -122,6 +129,15 @@
     &-artworks {
         border-bottom: 1px solid #000000;
         background-color: #F0F0F0;
+        &-box {
+            width: 100%;
+            @include pad {
+                padding: 0 12px;
+            }
+            @include mobile {
+                padding: 0;
+            }
+        }
         &-title {
             padding-top: 48px;
             width: 856px;
@@ -244,4 +260,9 @@
 }
 .mb-40 {
     margin-bottom: 40px;
+}
+.artwork {
+    img {
+        width: 100%;
+    }
 }
