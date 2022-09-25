@@ -1,6 +1,11 @@
 $pad:992px;
 $mobile:767px;
-
+$pc: 1296px;
+@mixin pc {
+    @media (max-width:$pc) {
+        @content
+    }
+};
 @mixin pad{
     @media (max-width:$pad) {
         @content

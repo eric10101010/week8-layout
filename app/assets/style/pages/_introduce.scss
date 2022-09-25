@@ -26,7 +26,8 @@
         }
         &-box {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            column-gap: 24px;
             @include pad {
                 justify-content: center;
             }
@@ -50,6 +51,9 @@
             img {
                 width: 416px;
                 height: 264px;
+                @include pad {
+                    width: 100%;
+                }
             }
         }
         &-text {
@@ -75,6 +79,10 @@
             background-color: #FFFFFF;
             width: 306px;
             border: 1px solid #000000;
+            @include pc {
+                margin-top: 48px;
+                width: 96%;
+            }
             @include pad {
                 width: 96%;
                 margin-top: 48px;
@@ -96,34 +104,44 @@
         }
     }
     &-tab {
-        &-box {
-            @include mobile {
-                padding: 0 12px;
-            }
+        background-color: #F0F0F0;
+        &-item {
+            margin-top: 40px;
+            background-color: #FFFFFF;
+            border: 1px solid #000000;
+            padding-left: 110px;
         }
-        button {
-            padding: 0 24px;
-            padding-top: 17px;
-            padding-bottom: 16px;
-            font-size: 48px;
-            line-height: 50px;
-            color: #808080;
-            @include pad {
-                font-size: 42px;
-            }
-            @include mobile {
-                padding: 16px;
-                font-size: 30px;
-                line-height: 34px;
-            }
-            &:hover {
+        &-button {
+            display: flex;
+            justify-content: flex-end;
+            bottom: 48px;
+            right: 86px;
+            a {
+                font-family: Squada One;
+                display: inline-block;
+                padding: 8px 48px;
                 color: #000000;
+                border: 1px solid #000000;
             }
         }
-        h4 {
-            font-size: 20px;
-            line-height: 26px;
-            color: #808080;
+        &-text {
+            width: 73.5%;
+            padding: 48px 0;
+            display: flex;
+            h3 {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+        &-img {
+            display: flex;
+            column-gap: 8px;
+            bottom: -48px;
+            img {
+                width: 263px;
+                height: 270px;
+                border: 10px solid #000000;
+            }
         }
     }
     &-artworks {
@@ -261,8 +279,42 @@
 .mb-40 {
     margin-bottom: 40px;
 }
+.pb-80 {
+    padding-bottom: 80px;
+    @include mobile {
+        padding-bottom: 48px;
+    }
+}
+.mb-128 {
+    margin-bottom: 128px;
+}
+.mt-40 {
+    margin-top: 40px;
+    @include mobile {
+        margin-top: 24px;
+    }
+}
 .artwork {
     img {
         width: 100%;
+    }
+}
+.nav-link {
+    color: #808080;
+    &:hover {
+        color: #000000;
+    }
+    h3 {
+        font-family: Squada One;
+        font-size: 48px;
+        line-height: 50px;
+        @include mobile {
+            font-size: 32px;
+            line-height: 34px;
+        }
+    }
+    span {
+        font-size: 20px;
+        line-height: 26px;
     }
 }

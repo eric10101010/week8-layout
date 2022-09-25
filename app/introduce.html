@@ -56,351 +56,293 @@ current: introduce
         </div>
     </div>
 </section>
-<section class="introduce-artworks">
-    <div class="container px-0">
-        <ul class="introduce-artworks-box nav nav-tabs border-bottom border-dark introduce-tab" id="myTab" role="tablist">
-            <li class="nav-item introduce-tab" role="presentation">
-                <button class="nav-link active d-flex align-items-end" id="artWorks-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="true">
-                    Art Works
-                    <h4 class="ps-3 d-lg-block d-md-block d-none">系列作品</h4>
+
+<section class="introduce-tab">
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link d-flex align-items-end" id="artworks-tab" data-bs-toggle="tab" data-bs-target="#artist-artWorks" type="button" role="tab" aria-controls="artworks" aria-selected="false">
+                    <h3 class="pe-3">Art Works</h3>
+                    <span class="d-lg-block d-md-block d-none">系列作品</span>
                 </button>
             </li>
-            <li class="nav-item introduce-tab" role="presentation">
-                <button class="nav-link d-flex align-items-end" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                    Collection
-                    <h4 class="ps-3 d-lg-block d-md-block d-none">收藏品</h4>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link d-flex align-items-end active " id="collection-tab" data-bs-toggle="tab" data-bs-target="#artist-collection" type="button" role="tab" aria-controls="collection" aria-selected="true">
+                    <h3 class="pe-3">Collection</h3>
+                    <span class="d-lg-block d-md-block d-none">收藏品</span>
                 </button>
             </li>
         </ul>
-        <div class="tab-content">
-            <div class="tab-pane active" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
-                <div class="row g-0">
-                    <div class="introduce-artworks-card col-12 position-relative d-lg-block d-md-block d-none">
-                        <span class="introduce-triangle-one"></span>
-                        <span class="introduce-triangle-two"></span>
-                        <div class="d-flex">
-                            <div class="introduce-artworks-title mb-5">
-                                <h3 class="fw-bold pb-3">追求者送我的花</h3>
-                                <p>我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade artist-artWorks" id="artist-artWorks" role="tabpanel" aria-labelledby="artworks-tab">
+                <ul class="introduce-tab-content d-flex flex-column">
+                    <li class="introduce-tab-item position-relative mb-40">
+                        <span class="introduce-triangle-one position-absolute"></span>
+                        <span class="introduce-triangle-two position-absolute"></span>
+                        <div class="d-flex row g-0 position-relative">
+                            <div class="introduce-tab-text col-9">
+                                <div class="d-flex flex-column">
+                                    <h3 class="fw-bold pb-3">追求者送我的花</h3>
+                                    <p>我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+                                </div>
                             </div>
-                            <div class="more-btn">
-                                <a href="#" class="position-relative">more
+                            <div class="introduce-tab-button col-3 position-absolute">
+                                <a href="#">MORE
                                     <span class="button-triangle"></span>
                                 </a>
                             </div>
                         </div>
-                        <ul class="introduce-artworks-list">
-                            <li class="introduce-artworks-item">
-                                <img src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="">
-                            </li>
-                            <li class="introduce-artworks-item">
-                                <img src="./assets/images/art30.jpg" alt="">
-                            </li>
-                            <li class="introduce-artworks-item">
-                                <img src="./assets/images/art14.jpg" alt="">
-                            </li>
-                            <li class="introduce-artworks-item">
-                                <img src="./assets/images/art29.jpg" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="introduce-artworks-card col-12 mt-0 mb-208 position-relative d-lg-block d-md-block d-none">
-                        <span class="introduce-triangle-one"></span>
-                        <span class="introduce-triangle-two"></span>
-                        <div class="d-flex">
-                            <div class="introduce-artworks-title mb-5">
-                                <h3 class="fw-bold pb-3">我家窗前的鳥</h3>
-                                <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                        <div class="introduce-tab-img position-relative">
+                            <img src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="photo">
+                            <img src="./assets/images/art30.jpg" alt="photo">
+                            <img src="./assets/images/art14.jpg" alt="photo">
+                            <img src="./assets/images/art29.jpg" alt="photo">
+                        </div>
+                    </li>
+                    <li class="introduce-tab-item mb-128 position-relative">
+                        <span class="introduce-triangle-one position-absolute"></span>
+                        <span class="introduce-triangle-two position-absolute"></span>
+                        <div class="d-flex row g-0 position-relative">
+                            <div class="introduce-tab-text col-9">
+                                <div class="d-flex flex-column">
+                                    <h3 class="fw-bold pb-3">我家窗前的鳥</h3>
+                                    <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                                </div>
                             </div>
-                            <div class="more-btn">
-                                <a href="#" class="position-relative">more
+                            <div class="introduce-tab-button col-3 position-absolute">
+                                <a href="#">MORE
                                     <span class="button-triangle"></span>
                                 </a>
                             </div>
                         </div>
-                        <ul class="introduce-artworks-list">
-                            <li class="introduce-artworks-item">
-                                <img src="./assets/images/art27.jpg" alt="photo">
-                            </li>
-                            <li class="introduce-artworks-item">
-                                <img src="./assets/images/art20.jpg" alt="photo">
-                            </li>
-                            <li class="introduce-artworks-item">
-                                <img src="./assets/images/art26.jpg" alt="photo">
-                            </li>
-                            <li class="introduce-artworks-item">
-                                <img src="./assets/images/art22.jpg" alt="photo">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <div class="introduce-artworks-card-mobile d-lg-none d-md-none d-block position-relative">
-                            <span class="introduce-triangle-one position-absolute top-0"></span>
-                            <span class="introduce-triangle-two position-absolute top-0"></span>
-                            <h3 class="fw-bold pb-3">追求者送我的花</h3>
-                            <p class="pb-4">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
-                            <img src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="photo" class="mb-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="more-btn-mobile">
-                                    <a href="#" class="position-relative">MORE
-                                        <span class="button-triangle"></span>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="introduce-tab-img position-relative">
+                            <img src="./assets/images/art27.jpg" alt="photo">
+                            <img src="./assets/images/art20.jpg" alt="photo">
+                            <img src="./assets/images/art26.jpg" alt="photo">
+                            <img src="./assets/images/art22.jpg" alt="photo">
                         </div>
-                        <div class="introduce-artworks-card-mobile d-lg-none d-md-none d-block mt-3 mb-40 position-relative">
-                            <span class="introduce-triangle-one position-absolute top-0"></span>
-                            <span class="introduce-triangle-two position-absolute top-0"></span>
-                            <h3 class="fw-bold pb-3">我家窗前的鳥</h3>
-                            <p class="pb-4">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
-                            <img src="./assets/images/art27.jpg" alt="photo" class="mb-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="more-btn-mobile">
-                                    <a href="#" class="position-relative">MORE
-                                        <span class="button-triangle"></span>
-                                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade show active" id="artist-collection" role="tabpanel" aria-labelledby="collection-tab">
+                <div class="masonry row row-cols-2 row-cols-lg-3 row-cols-xl-4 mt-40 pb-80"  data-masonry='{"percentPosition": true }'>
+                    <div class="col">
+                        <div class="border-lg-bottom border-black artwork">
+                            <div class="bg-white p-2 p-lg-4 position-relative">
+                            <a href="#">
+                                <img src="./assets/images/art09.jpg" alt="區塊戀-他的私生活"  style="height: 254px;">
+                                <div class="artwork__overlay p-3">
+                                <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                                    <div class="text-white">
+                                    <p class="mb-3">區塊戀-他的私生活</p>
+                                    <p>
+                                        <i class="fab fa-ethereum"></i>
+                                        <span>300</span>
+                                    </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-more btn-more-outline position-relative">
+                                            MORE
+                                            <span class="subtitle-triangle"></span>
+                                        </a>
+                                    </div>
                                 </div>
+                                </div>
+                            </a>
                             </div>
+                            <h4 class="fw-bold p-2 px-lg-0 py-lg-3 border-bottom border-dark pb-3">區塊戀-他的私生活</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border-lg-bottom border-black artwork">
+                            <div class="bg-white p-2 p-lg-4 position-relative">
+                            <a href="#">
+                                <img src="./assets/images/art10.jpg" alt="夏娃的醜聞" style="height: 327px;">
+                                <div class="artwork__overlay p-3">
+                                <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                                    <div class="text-white">
+                                    <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
+                                    <p>
+                                        <i class="fab fa-ethereum"></i>
+                                        <span>300</span>
+                                    </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-more btn-more-outline position-relative">
+                                            MORE
+                                            <span class="subtitle-triangle"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+                            <h4 class="fw-bold p-2 px-lg-0 py-lg-3 border-bottom border-dark pb-3">夏娃的醜聞</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border-lg-bottom border-black artwork mt-lg-0 mt-mb-5 mt-5">
+                            <div class="bg-white p-2 p-lg-4 position-relative">
+                            <a href="#">
+                                <img src="./assets/images/art03.jpg" alt="十分鐘就到"  style="height: 254px;">
+                                <div class="artwork__overlay p-3">
+                                <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                                    <div class="text-white">
+                                    <p class="mb-3">十分鐘就到</p>
+                                    <p>
+                                        <i class="fab fa-ethereum"></i>
+                                        <span>300</span>
+                                    </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-more btn-more-outline position-relative">
+                                            MORE
+                                            <span class="subtitle-triangle"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+                            <h4 class="fw-bold p-2 px-lg-0 py-lg-3 border-bottom border-dark pb-3">十分鐘就到</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border-lg-bottom border-black artwork mt-lg-0 mt-mb-5 mt-5">
+                            <div class="bg-white p-2 p-lg-4 position-relative">
+                            <a href="#">
+                                <img src="./assets/images/art11.jpg" alt="沒有人愛我"  style="height: 169px;">
+                                <div class="artwork__overlay p-3">
+                                <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                                    <div class="text-white">
+                                    <p class="mb-3">沒有人愛我</p>
+                                    <p>
+                                        <i class="fab fa-ethereum"></i>
+                                        <span>300</span>
+                                    </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-more btn-more-outline position-relative">
+                                            MORE
+                                            <span class="subtitle-triangle"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+                            <h4 class="fw-bold p-2 px-lg-0 py-lg-3 border-bottom border-dark pb-3">沒有人愛我</h4>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="border-lg-bottom border-black artwork mt-lg-5 mt-md-5 mt-5">
+                            <div class="bg-white p-2 p-lg-4 position-relative">
+                            <a href="#">
+                                <img src="./assets/images/art27.jpg" alt="我真的受傷了"  style="height: 254px;">
+                                <div class="artwork__overlay p-3">
+                                <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                                    <div class="text-white">
+                                    <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
+                                    <p>
+                                        <i class="fab fa-ethereum"></i>
+                                        <span>300</span>
+                                    </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-more btn-more-outline position-relative">
+                                            MORE
+                                            <span class="subtitle-triangle"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+                            <h4 class="fw-bold p-2 px-lg-0 py-lg-3 border-bottom border-dark pb-3">我真的受傷了</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border-lg-bottom border-black artwork mt-lg-5 mt-md-5 mt-5">
+                            <div class="bg-white p-2 p-lg-4 position-relative">
+                            <a href="#">
+                                <img src="./assets/images/art12.jpg" alt="不哭不哭眼淚是珍珠"  style="height: 174px;">
+                                <div class="artwork__overlay p-3">
+                                <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                                    <div class="text-white">
+                                    <p class="mb-3">不哭不哭眼淚是珍珠</p>
+                                    <p>
+                                        <i class="fab fa-ethereum"></i>
+                                        <span>300</span>
+                                    </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-more btn-more-outline position-relative">
+                                            MORE
+                                            <span class="subtitle-triangle"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+                            <h4 class="fw-bold p-2 px-lg-0 py-lg-3 border-bottom border-dark pb-3">不哭不哭眼淚是珍珠</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border-lg-bottom border-black artwork">
+                            <div class="bg-white p-2 p-lg-4 position-relative mt-5">
+                            <a href="#">
+                                <img src="./assets/images/art04.jpg" alt="我這樣有美嗎"  style="height: 395px;">
+                                <div class="artwork__overlay p-3">
+                                <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                                    <div class="text-white">
+                                    <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
+                                    <p>
+                                        <i class="fab fa-ethereum"></i>
+                                        <span>300</span>
+                                    </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-more btn-more-outline position-relative">
+                                            MORE
+                                            <span class="subtitle-triangle"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+                            <h4 class="fw-bold p-2 px-lg-0 py-lg-3 border-bottom border-dark pb-3">我這樣有美嗎</h4>
+                        </div>
+                    </div>   
+                    <div class="col">
+                        <div class="border-lg-bottom border-black artwork mt-5">
+                            <div class="bg-white p-2 p-lg-4 position-relative">
+                            <a href="#">
+                                <img src="./assets/images/art02.jpg" alt="藍色啤酒海"  style="height: 254px;">
+                                <div class="artwork__overlay p-3">
+                                <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                                    <div class="text-white">
+                                    <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
+                                    <p>
+                                        <i class="fab fa-ethereum"></i>
+                                        <span>300</span>
+                                    </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="#" class="btn btn-more btn-more-outline position-relative">
+                                            MORE
+                                            <span class="subtitle-triangle"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+                            <h4 class="fw-bold p-2 px-lg-0 py-lg-3 border-bottom border-dark pb-3">藍色啤酒海</h4>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane introduce-layout" id="collection" role="tabpanel" aria-labelledby="profile-tab">
-                <ul class="row row-cols-2 row-cols-md-3 row-cols-lg-4 mb-0 grid-masonry"
-                data-masonry='{"percentPosition": true }'>
-                    <li class="col grid-masonry-item mb-5">
-                    <div class="border-lg-bottom border-black artwork">
-                        <div class="bg-white p-2 p-lg-4 position-relative">
-                        <a href="#">
-                            <img src="./assets/images/art09.jpg" alt="區塊戀-他的私生活" style="height: 254px;">
-                            <div class="artwork__overlay p-3">
-                            <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
-                                <div class="text-white">
-                                <p class="mb-3">區塊戀-他的私生活</p>
-                                <p>
-                                    <i class="fab fa-ethereum"></i>
-                                    <span>300</span>
-                                </p>
-                                </div>
-                                <div class="text-end">
-                                <a href="art-intro.html" class="btn btn-more btn-more-outline po">
-                                    MORE
-                                    <span class="button-triangle"></span>
-                                </a>
-                                </div>
-                            </div>
-                            </div>
-                        </a>
-                        </div>
-                        <h2 class="fw-bold py-3 border-bottom border-dark">
-                            區塊戀-他的私生活
-                        </h2>
-                    </div>
-                    </li>
-                    <li class="col grid-masonry-item mb-5">
-                    <div class="border-lg-bottom border-black artwork">
-                        <div class="bg-white p-2 p-lg-4 position-relative">
-                        <a href="#">
-                            <img src="./assets/images/art10.jpg" alt="夏娃的醜聞" style="height: 295px;">
-                            <div class="artwork__overlay p-3">
-                            <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
-                                <div class="text-white">
-                                <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
-                                <p>
-                                    <i class="fab fa-ethereum"></i>
-                                    <span>300</span>
-                                </p>
-                                </div>
-                                <div class="text-end">
-                                <a href="art-intro.html" class="btn btn-more btn-more-outline position-relative">
-                                    MORE
-                                    <span class="button-triangle"></span>
-                                </a>
-                                </div>
-                            </div>
-                            </div>
-                        </a>
-                        </div>
-                        <h2 class="fw-bold py-3 border-bottom border-dark">
-                            夏娃的醜聞
-                        </h2>
-                    </div>
-                    </li>
-                    <li class="col grid-masonry-item mb-5">
-                    <div class="border-lg-bottom border-black artwork">
-                        <div class="bg-white p-2 p-lg-4 position-relative">
-                        <a href="#">
-                            <img src="./assets/images/art03.jpg" alt="十分鐘就到" style="height: 254px;">
-                            <div class="artwork__overlay p-3">
-                            <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
-                                <div class="text-white">
-                                <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
-                                <p>
-                                    <i class="fab fa-ethereum"></i>
-                                    <span>300</span>
-                                </p>
-                                </div>
-                                <div class="text-end">
-                                <a href="art-intro.html" class="btn btn-more btn-more-outline position-relative">
-                                    MORE
-                                    <span class="button-triangle"></span>
-                                </a>
-                                </div>
-                            </div>
-                            </div>
-                        </a>
-                        </div>
-                        <h2 class="fw-bold py-3 border-bottom border-dark">
-                            十分鐘就到
-                        </h2>
-                    </div>
-                    </li>
-                    <li class="col grid-masonry-item mb-5">
-                    <div class="border-lg-bottom border-black artwork">
-                        <div class="bg-white p-2 p-lg-4 position-relative">
-                        <a href="#">
-                            <img src="./assets/images/art11.jpg" alt="沒有人愛我">
-                            <div class="artwork__overlay p-3">
-                            <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
-                                <div class="text-white">
-                                <p class="mb-3">沒有人愛我</p>
-                                <p>
-                                    <i class="fab fa-ethereum"></i>
-                                    <span>300</span>
-                                </p>
-                                </div>
-                                <div class="text-end">
-                                <a href="art-intro.html" class="btn btn-more btn-more-outline position-relative">
-                                    MORE
-                                    <span class="button-triangle"></span>
-                                </a>
-                                </div>
-                            </div>
-                            </div>
-                        </a>
-                        </div>
-                        <h2 class="fw-bold py-3 border-bottom border-dark">
-                            沒有人愛我
-                        </h2>
-                    </div>
-                    </li>
-                    <li class="col grid-masonry-item">
-                    <div class="border-lg-bottom border-black artwork">
-                        <div class="bg-white p-2 p-lg-4 position-relative">
-                        <a href="#">
-                            <img src="./assets/images/art27.jpg" alt="我真的受傷了" style="height: 254px">
-                            <div class="artwork__overlay p-3">
-                            <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
-                                <div class="text-white">
-                                <p class="mb-3">我真的受傷了</p>
-                                <p>
-                                    <i class="fab fa-ethereum"></i>
-                                    <span>300</span>
-                                </p>
-                                </div>
-                                <div class="text-end">
-                                <a href="art-intro.html" class="btn btn-more btn-more-outline position-relative">
-                                    MORE
-                                    <span class="button-triangle"></span>
-                                </a>
-                                </div>
-                            </div>
-                            </div>
-                        </a>
-                        </div>
-                        <h2 class="fw-bold py-3 border-bottom border-dark">
-                            我真的受傷了
-                        </h2>
-                    </div>
-                    </li>
-                    <li class="col grid-masonry-item">
-                    <div class="border-lg-bottom border-black artwork">
-                        <div class="bg-white p-2 p-lg-4 position-relative">
-                        <a href="#">
-                            <img src="./assets/images/art12.jpg" alt="不哭不哭眼淚是珍珠">
-                            <div class="artwork__overlay p-3">
-                            <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
-                                <div class="text-white">
-                                    <p class="mb-3">不哭不哭眼淚是珍珠</p>
-                                <p>
-                                    <i class="fab fa-ethereum"></i>
-                                    <span>300</span>
-                                </p>
-                                </div>
-                                <div class="text-end">
-                                <a href="art-intro.html" class="btn btn-more btn-more-outline po">
-                                    MORE
-                                    <span class="button-triangle"></span>
-                                </a>
-                                </div>
-                            </div>
-                            </div>
-                        </a>
-                        </div>
-                        <h2 class="fw-bold py-3 border-bottom border-dark">
-                            不哭不哭眼淚是珍珠
-                        </h2>
-                    </div>
-                    </li>
-                    <li class="col grid-masonry-item">
-                    <div class="border-lg-bottom border-black artwork">
-                        <div class="bg-white p-2 p-lg-4 position-relative">
-                        <a href="#">
-                            <img src="./assets/images/art04.jpg" alt="我這樣有美嗎" style="height: 395px">
-                            <div class="artwork__overlay p-3">
-                            <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
-                                <div class="text-white">
-                                <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
-                                <p>
-                                    <i class="fab fa-ethereum"></i>
-                                    <span>300</span>
-                                </p>
-                                </div>
-                                <div class="text-end">
-                                <a href="art-intro.html" class="btn btn-more btn-more-outline position-relative">
-                                    MORE
-                                    <span class="button-triangle"></span>
-                                </a>
-                                </div>
-                            </div>
-                            </div>
-                        </a>
-                        </div>
-                        <h2 class="fw-bold py-3 border-bottom border-dark">
-                            我這樣有美嗎
-                        </h2>
-                    </div>
-                    </li>
-                    <li class="col grid-masonry-item">
-                    <div class="border-lg-bottom border-black artwork">
-                        <div class="bg-white p-2 p-lg-4 position-relative">
-                        <a href="#">
-                            <img src="./assets/images/art02.jpg" alt="藍色啤酒海" style="height: 254px;">
-                            <div class="artwork__overlay p-3">
-                            <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
-                                <div class="text-white">
-                                <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
-                                <p>
-                                    <i class="fab fa-ethereum"></i>
-                                    <span>300</span>
-                                </p>
-                                </div>
-                                <div class="text-end">
-                                <a href="art-intro.html" class="btn btn-more btn-more-outline position-relative">
-                                    MORE
-                                    <span class="button-triangle"></span>
-                                </a>
-                                </div>
-                            </div>
-                            </div>
-                        </a>
-                        </div>
-                        <h2 class="fw-bold py-3 border-bottom border-dark">
-                            藍色啤酒海
-                        </h2>
-                    </div>
-                    </li>
-            </ul>
             </div>
         </div>
     </div>
