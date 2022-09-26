@@ -9748,6 +9748,7 @@ a {
         .index-banner-text h4, .index-banner-text .h4 {
           padding-top: 32px; } }
     .index-banner-text a {
+      font-family: Squada One;
       color: #000000;
       font-size: 18px;
       line-height: 19px;
@@ -9812,6 +9813,7 @@ a {
       font-size: 18px;
       line-height: 19px; }
     .index-product-card a {
+      font-family: Squada One;
       position: absolute;
       bottom: 24px;
       right: 24px;
@@ -10171,6 +10173,7 @@ a {
     line-height: 29px; }
 
 .subtitle-button {
+  font-family: Squada One;
   color: #000000;
   font-size: 18px;
   line-height: 19px;
