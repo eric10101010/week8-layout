@@ -10523,6 +10523,11 @@ a {
     background-color: #FFFFFF;
     border: 1px solid #000000;
     padding-left: 110px; }
+    @media (max-width: 767px) {
+      .introduce-tab-item {
+        padding-left: 0;
+        padding: 0 16px;
+        margin-top: 24px; } }
   .introduce-tab-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10532,18 +10537,46 @@ a {
             justify-content: flex-end;
     bottom: 48px;
     right: 86px; }
+    @media (max-width: 992px) {
+      .introduce-tab-button {
+        bottom: -24px;
+        right: 40px; } }
     .introduce-tab-button a {
       font-family: Squada One;
       display: inline-block;
       padding: 8px 48px;
       color: #000000;
       border: 1px solid #000000; }
+      .introduce-tab-button a:hover {
+        background-color: #E6553B;
+        color: #FFFFFF; }
+        .introduce-tab-button a:hover .button-triangle {
+          border-color: transparent transparent #000000 transparent; }
   .introduce-tab-text {
     width: 73.5%;
     padding: 48px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 767px) {
+      .introduce-tab-text {
+        padding-bottom: 32px; } }
+    @media (max-width: 767px) {
+      .introduce-tab-text img {
+        margin-top: 24px;
+        width: 304px;
+        height: 313px;
+        border: 10px solid #000000; } }
+    @media (max-width: 767px) {
+      .introduce-tab-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%; } }
     .introduce-tab-text h3, .introduce-tab-text .h3 {
       font-size: 24px;
       line-height: 35px; }
@@ -10556,8 +10589,8 @@ a {
             column-gap: 8px;
     bottom: -48px; }
     .introduce-tab-img img {
-      width: 263px;
-      height: 270px;
+      width: 22.5%;
+      height: auto;
       border: 10px solid #000000; }
 
 .introduce-artworks {
@@ -10678,6 +10711,9 @@ a {
 
 .mb-40 {
   margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .mb-40 {
+      margin-bottom: 0; } }
 
 .pb-80 {
   padding-bottom: 80px; }
@@ -10687,6 +10723,9 @@ a {
 
 .mb-128 {
   margin-bottom: 128px; }
+  @media (max-width: 767px) {
+    .mb-128 {
+      margin-bottom: 40px; } }
 
 .mt-40 {
   margin-top: 40px; }
@@ -10712,6 +10751,20 @@ a {
   .nav-link span {
     font-size: 20px;
     line-height: 26px; }
+
+.mobile-button a {
+  font-size: 18px;
+  line-height: 19px;
+  font-family: Squada One;
+  display: inline-block;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 8px 48px; }
+  .mobile-button a:hover {
+    background-color: #E6553B;
+    color: #FFFFFF; }
+    .mobile-button a:hover .button-triangle {
+      border-color: transparent transparent #000000 transparent; }
 
 .ranking-content {
   background-color: #F0F0F0;
