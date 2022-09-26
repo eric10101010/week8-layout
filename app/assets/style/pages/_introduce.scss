@@ -110,24 +110,56 @@
             background-color: #FFFFFF;
             border: 1px solid #000000;
             padding-left: 110px;
+            @include mobile {
+                padding-left: 0;
+                padding: 0 16px;
+                margin-top: 24px;
+            }
         }
         &-button {
             display: flex;
             justify-content: flex-end;
             bottom: 48px;
             right: 86px;
+            @include pad {
+                bottom: -24px;
+                right: 40px;
+            }
             a {
                 font-family: Squada One;
                 display: inline-block;
                 padding: 8px 48px;
                 color: #000000;
                 border: 1px solid #000000;
+                &:hover {
+                    background-color: #E6553B;
+                    color: #FFFFFF;
+                    .button-triangle {
+                        border-color: transparent transparent #000000 transparent;
+                    }
+                }
             }
         }
         &-text {
             width: 73.5%;
             padding: 48px 0;
             display: flex;
+            @include mobile {
+                padding-bottom: 32px;
+            }
+            img {
+                @include mobile {
+                    margin-top: 24px;
+                    width: 304px;
+                    height: 313px;
+                    border: 10px solid #000000;
+                }
+            }
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
             h3 {
                 font-size: 24px;
                 line-height: 35px;
@@ -138,8 +170,8 @@
             column-gap: 8px;
             bottom: -48px;
             img {
-                width: 263px;
-                height: 270px;
+                width: 22.5%;
+                height: auto;
                 border: 10px solid #000000;
             }
         }
@@ -278,6 +310,9 @@
 }
 .mb-40 {
     margin-bottom: 40px;
+    @include mobile {
+        margin-bottom: 0;
+    }
 }
 .pb-80 {
     padding-bottom: 80px;
@@ -287,6 +322,9 @@
 }
 .mb-128 {
     margin-bottom: 128px;
+    @include mobile {
+        margin-bottom: 40px;
+    }
 }
 .mt-40 {
     margin-top: 40px;
@@ -316,5 +354,23 @@
     span {
         font-size: 20px;
         line-height: 26px;
+    }
+}
+.mobile-button {
+    a {
+        font-size: 18px;
+        line-height: 19px;
+        font-family: Squada One;
+        display: inline-block;
+        border: 1px solid #000000;
+        color: #000000;
+        padding: 8px 48px;
+        &:hover {
+            background-color: #E6553B;
+            color: #FFFFFF;
+            .button-triangle {
+                border-color: transparent transparent #000000 transparent;
+            }
+        }
     }
 }
