@@ -10593,7 +10593,7 @@ a {
     bottom: -48px; }
     .introduce-tab-img img {
       width: 22.5%;
-      height: auto;
+      height: 270px;
       border: 10px solid #000000; }
 
 .introduce-artworks {
@@ -10674,6 +10674,21 @@ a {
   border-color: transparent #000000  transparent transparent;
   position: absolute;
   right: 0; }
+
+.introduce-button {
+  display: inline-block; }
+  .introduce-button:hover a {
+    background-color: #E6553B;
+    color: #FFFFFF; }
+    .introduce-button:hover a .button-triangle {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 16px 16px;
+      border-color: transparent transparent #000000 transparent;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
 
 .more-btn {
   margin-top: 112px;
@@ -10768,6 +10783,9 @@ a {
     color: #FFFFFF; }
     .mobile-button a:hover .button-triangle {
       border-color: transparent transparent #000000 transparent; }
+
+.mr-100 {
+  margin-right: 90px; }
 
 .ranking-content {
   background-color: #F0F0F0;
@@ -10903,6 +10921,18 @@ a {
   @media (max-width: 767px) {
     .explore {
       padding-bottom: 48px; } }
+  .explore-button:hover a {
+    background-color: #E6553B;
+    color: #FFFFFF; }
+    .explore-button:hover a .button-triangle {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 16px 16px;
+      border-color: transparent transparent #000000 transparent;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
   .explore-item-1 {
     height: 358px; }
     .explore-item-1 h2, .explore-item-1 .h2 {
