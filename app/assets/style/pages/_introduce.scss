@@ -171,7 +171,7 @@
             bottom: -48px;
             img {
                 width: 22.5%;
-                height: auto;
+                height: 270px;
                 border: 10px solid #000000;
             }
         }
@@ -261,6 +261,25 @@
             border-color: transparent #000000  transparent transparent;
             position: absolute;
             right: 0;
+        }
+    }
+    &-button {
+        display: inline-block;
+        &:hover {
+            a {
+                background-color: #E6553B;
+                color: #FFFFFF;
+                .button-triangle {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 0 16px 16px;
+                    border-color: transparent transparent #000000 transparent;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
         }
     }
 }
@@ -373,4 +392,7 @@
             }
         }
     }
+}
+.mr-100{
+    margin-right: 90px;
 }
