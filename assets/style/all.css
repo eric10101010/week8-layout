@@ -9624,6 +9624,8 @@ a {
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap; }
+    .header-logo:hover {
+      opacity: .5; }
     @media (max-width: 992px) {
       .header-logo {
         width: 85px;
@@ -9633,6 +9635,11 @@ a {
     .header-menu-item a {
       color: #000000;
       padding: 40px 48px; }
+      .header-menu-item a:hover {
+        color: #E6553B;
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s; }
   .header-search {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
